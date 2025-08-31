@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Testing</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="message-error" id="message-error">
+        <p id="message-error-text"></p>
+      </div>
+      <div class="box-content">
+        <div class="title-content">
+          <h3 class="register-contact-title">Register contacts</h3>
+        </div>
+        <div class="input-content">
+          <div class="input-container">
+            <div class="input-positioning">
+              <p class="label-name">Name</p>
+              <input
+                type="text"
+                class="input-name inputElement"
+                id="inp-name"
+              />
+            </div>
+          </div>
+          <div class="input-container">
+            <div class="input-positioning">
+              <p class="label-contact">Contact number</p>
+              <input
+                type="text"
+                class="input-contact inputElement"
+                id="inp-contact"
+                maxlength="12"
+                minlength="10"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="btns-container">
+          <button class="register-contact" id="btn-save-contact">Save</button>
+        </div>
+      </div>
+      <div class="contact-list" id="contact-list"></div>
+    </div>
+  </body>
+</html>
