@@ -124,7 +124,7 @@ function hasInfoInputs() {
 inputElements.forEach((element) => {
   element.addEventListener("input", (ev) => {
     hideMessageError();
-    if (isNaN(ev.currentTarget.value)) {
+    if (ev.currentTarget === contactInput && isNaN(ev.currentTarget.value)) {
       ev.currentTarget.value = "";
     }
   });
